@@ -23,14 +23,14 @@ header {
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     padding: 15px 0;
 }
 
 .boxicono {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     position: fixed;
     z-index: 10;
     margin: 15px;
@@ -86,7 +86,8 @@ display: none;
 .portada img {
     width:100%;
     height:cover;
-    margin: 60px 0;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 
@@ -103,14 +104,14 @@ display: none;
 .historia {
 
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .bio {
     margin-top: 15px;
-    text-align: justify;
+    text-align: center;
     width: 100%;
-    padding: 10px 50px;
+    padding: 10px 30px;
 }
 
 
@@ -137,7 +138,7 @@ display: none;
 .titulo {
     grid-area: titulo;
     text-align:center;
-    font-size: 40px;
+    font-size: 25px;
     
 }
 
@@ -177,8 +178,8 @@ display: none;
 
 .fotos {
     display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 60px repeat(6, 200px) 350px;
+    grid-template-columns: 280px;
+    grid-template-rows: 60px repeat(6, 200px) 200px;
     grid-template-areas:"titulo"
                         "foto1"
                         "foto2"
@@ -189,7 +190,7 @@ display: none;
                         "video";
     row-gap: 10px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
 }
 
@@ -197,7 +198,8 @@ display: none;
     grid-area: titulo;
     color: yellow;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
+    margin: 10px 0;
 
 }
 
@@ -274,7 +276,7 @@ display: none;
 
 .discos {
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 250px;
     grid-template-rows: 40px repeat (5,100px);
     grid-template-areas: "titulo"
                         "discos";
@@ -288,7 +290,7 @@ display: none;
     color: yellow;
     margin-top: 50px;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .animaciondisco {
@@ -308,7 +310,7 @@ display: none;
 h3 {
     text-align: center;
     margin: 10px;
-    font-size: 30px;
+    font-size: 20px;
     
 }
 .discografia h3 {
@@ -321,8 +323,8 @@ h3 {
 .shows {
     color: yellow;
     display: grid;
-    grid-template-columns: repeat(2, 160px);
-    grid-template-rows: 40px 450px;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: 40px 500px;
     grid-template-areas: "titulo titulo"
                         "fecha lugar";
     justify-content: center;
@@ -333,23 +335,25 @@ h3 {
 .tituloshows {
     grid-area: titulo;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
 }
 
 .fecha {
     grid-area: fecha;
+    font-size: 15px;
 }
 
 .shows .fecha li {
-    margin: 23px 0px;
+    margin: 20px 0px;
     padding-left: 20px;
 }
 .lugar {
     grid-area: lugar;
+    font-size: 15px;
 }
 
 .shows .lugar li {
-    margin: 23px 0;
+    margin: 20px 0;
 }
 
 /*--Footer--*/
@@ -370,7 +374,7 @@ h3 {
 .contenedor nav ul li {
     width: 5%;
     display: inline-block;
-    margin: 10px 0;
+    margin: 10px 5px;
     float: right;   
 }
 
@@ -381,6 +385,7 @@ h4 {
 
 .redes {
     width: 100%;
+
 }
 
 .contenedor nav ul .cc {
@@ -530,6 +535,47 @@ h3 {
 }
 
 
+/*--- Shows ---*/
+    
+.shows {
+    color: yellow;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 40px 700px;
+    grid-template-areas: "titulo titulo"
+                        "fecha lugar";
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.tituloshows {
+    color: yellow;
+    grid-area: titulo;
+    text-align: center;
+    font-size: 40px;
+}
+
+.fecha {
+    grid-area: fecha;
+    font-size:20px;
+}
+
+.shows .fecha li {
+    margin: 30px 0px;
+    padding-left: 20px;
+    
+}
+.lugar {
+    grid-area: lugar;
+    font-size:20px;
+}
+
+.shows .lugar li {
+    margin: 30px 0;
+}
+
+
 /*--- Footer ---*/
 
 .contenedor {
@@ -597,7 +643,7 @@ p {
 .fotos {
     display: grid;
     grid-template-columns: 650px;
-    grid-template-rows: 60px repeat(6, 450px) 350px;
+    grid-template-rows: 60px repeat(6, 450px) 400px;
     grid-template-areas:"titulo"
                     "foto1"
                     "foto2"
@@ -847,6 +893,10 @@ h1 {
     padding: 30px 150px;
 }
 
+.main .historia {
+    font-size: 40px;
+}
+
 .bio {
     font-size: 20px;
     text-align: justify;
@@ -865,6 +915,10 @@ h1 {
     margin-top: 50px;
     margin-bottom: 100px;
     height: 500px;
+}
+
+.integrantes .titulo {
+    font-size: 40px;
 }
 
 .integrantes p {
@@ -961,9 +1015,10 @@ h1 {
 
 .cd {
     color: yellow;
-    margin-top: 50px;
+    margin: 50px 0;
     text-align: center;
     font-size: 40px;
+
 }
 
 .animaciondisco {
@@ -1003,7 +1058,7 @@ h3 {
                         "fecha lugar";
     justify-content: center;
     margin: auto;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
 .tituloshows {
@@ -1035,7 +1090,7 @@ margin: 23px 0;
 
 footer {
     width: 100%;
-    height:80px;
+    height:60px;
     background: yellow;
 }
 
@@ -1050,26 +1105,31 @@ footer {
     width: 100%;
 }
 
+.contenedor nav ul {
+    margin: 0 5px;
+}
+
+
 .contenedor nav ul li {
     width: 3%;
     display: inline-block;
     font-size:0;
-    margin:5px;
-    margin-right: 25px;
+    margin-right: 0;
     float: right;
 }
 
 h4 {
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .redes {
-    width: 90%;
+    margin: 5px 0;
+    width: 80%;
 }
 
 .contenedor nav ul .cc {
-    width: 20px;
+    width: 15px;
 }
 
 }
